@@ -1,0 +1,12 @@
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Birthdate</th>
+    </tr>
+    <tr *ngFor="let i of data">
+        <td>{{i.Name}}</td>
+        <td>{{i.birthdate}}</td>
+    </tr>
+</table>
+<br>
+<app-radio-button [data] = "data"></app-radio-button>

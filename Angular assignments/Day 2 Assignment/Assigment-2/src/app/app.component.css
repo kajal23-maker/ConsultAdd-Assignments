@@ -1,0 +1,20 @@
+body{
+    background-color: antiquewhite;
+}
+button{
+    align-items: center;
+    background-color: #34568B;
+    width: 15%;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 4px 10px rgba(128, 128, 128, 0.675);
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+div{
+    text-align: center;
+    margin: 340px 0;
+}

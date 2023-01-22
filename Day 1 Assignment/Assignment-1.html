@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="Style-1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="circle1" onclick="fun1(1)">
+            <h3 id="temp1">C1</h3>
+        </div>
+        <div class="circle2" onclick="fun1(2)">
+            <h3 id="temp2">C2</h3>
+        </div>
+        <div class="circle3" onclick="fun1(3)">
+            <h3 id="temp3">C3</h3>
+        </div>
+    </div>
+    <script>
+        function fun1(n){
+            if(n==1)
+              alert(document.getElementById("temp1").innerHTML);
+            else if(n==2)
+              alert(document.getElementById("temp2").innerHTML);
+            else  
+              alert(document.getElementById("temp3").innerHTML);
+        }
+    </script>
+</body>
+</html>

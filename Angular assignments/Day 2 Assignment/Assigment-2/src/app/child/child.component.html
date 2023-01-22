@@ -1,0 +1,20 @@
+<!-- <p *ngFor="let d of info">{{d.title}}</p> -->
+<div>
+    <h1><u>Records from: "https://jsonplaceholder.typicode.com/posts"</u> </h1>
+    <table>
+        <tr>
+            <th>USERID</th>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>BODY</th>
+        </tr>
+        <tr  *ngFor="let i of info">
+            <td>{{i.userId}}</td>
+            <td>{{i.id}}</td>
+            <td>{{i.title}}</td>
+            <td>{{i.body}}</td>
+        </tr>
+    </table>
+</div>
+
+<ng-content></ng-content>

@@ -1,0 +1,22 @@
+body{
+    background-color: antiquewhite;
+}
+.container{
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+button{
+    width: 60px;
+    height: 60px;
+    margin: 3px 1px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    /* border: none; */
+    background-color: rgb(196, 149, 196);
+    color: rgb(51, 51, 51);
+}
+button:nth-child(6){
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+<div class="main">
+    <h2>Currency Calculator</h2>
+    <form (ngSubmit)="onSubmit()">
+        Enter amount: <input [formControl]="num" type="number"> <br><br>
+        From: <select [formControl]="from" id="from">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="INR">INR</option>
+            <option value="GBP">GBP</option>
+            <option value="RUB">RUB</option>
+        </select>
+        To: <select [formControl]="to" id="to">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="INR">INR</option>
+            <option value="GBP">GBP</option>
+            <option value="RUB">RUB</option>
+        </select> <br><br>
+        <div class="one"><button>Convert</button></div>
+        <label> Result:</label><b>{{result | currency:unit}}</b>
+    </form>
+</div>
