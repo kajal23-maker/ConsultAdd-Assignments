@@ -30,13 +30,13 @@ public class StudentController {
 
     //update
     @PutMapping("/updatestudent")
-    public Student updateStudent(@RequestBody Student student){
+    public Student updateStudent(@RequestBody Student student) throws Exception {
         return studentService.updateStudent(student);
     }
 
     //getbyid
     @GetMapping("/studentbyid/{id}")
-    public Student getStudentById(@PathVariable int id){
+    public Student getStudentById(@PathVariable int id) throws Exception {
         return studentService.getStudentById(id);
     }
 }
