@@ -39,17 +39,16 @@ public class StudentService {
     }
 
     //update student
-    public Student updateStudent(Student student){
-        Student existingStudent = studentRepo.findById(student.getId()).orElse(null);
-        existingStudent.setId(student.getId());
+    public Student updateStudent(Student student) throws Exception {
+        Student existingStudent = studentRepo.findById(student.getId()).orElseThrow(NoSuchElementException::new);
         existingStudent.setAge(student.getAge());
         existingStudent.setName(student.getName());
         return studentRepo.save(existingStudent);
     }
 
     //get student by id
-    public Student getStudentById(int id){
-        return studentRepo.findById(id).orElse(null);
+    public Student getStudentById(int id) throws Exception {
+        return studentRepo.findById(id).orElseThrow(NoSuchElementException::new);
     }
 
 }
